@@ -1,0 +1,18 @@
+{
+    "name": "universalyums/interview-project-fullstack",
+    "description": "",
+    "keywords": [ "wordpress" ],
+    "type": "wordpress-plugin",
+    "homepage": "https://github.com/UniversalYumsLLC/interview-project-fullstack",
+    "license": "GPL-2.0+",
+    "require-dev": {
+        "assertwell/wp-core-test-framework": "^0.1.1",
+        "php": ">=7.2",
+        "phpunit/phpunit": ">=5.7 <8.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "InterviewProjectFullstack\\Test\\": "tests/phpunit/"
+        }
+    }
+}

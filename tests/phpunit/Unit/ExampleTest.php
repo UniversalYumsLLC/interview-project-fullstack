@@ -4,7 +4,6 @@ namespace InterviewProjectFullstack\Test\Unit;
 
 use WP_UnitTestCase;
 use WC_Helper_Order;
-use InterviewProjectFullstack;
 
 class Example_Test extends WP_UnitTestCase {
 

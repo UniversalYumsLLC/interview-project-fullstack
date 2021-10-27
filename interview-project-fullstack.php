@@ -64,6 +64,13 @@ class InterviewProjectFullstack {
 	public function order_search() { ?>
 		<h3>{ Placeholder for search field and button. }</h3>
 	<?php }
+
+	/**
+	 * Example method that returns a value.
+	 */
+	public static function example_method() {
+		return 5;
+	}
 }
 
 InterviewProjectFullstack::instance();

@@ -1,4 +1,4 @@
-# Interview Project Fullstack
+# Interview Project Fullstack ![Testing status](https://github.com/UniversalYumsLLC/interview-project-fullstack/actions/workflows/php-tests.yml/badge.svg?branch=main)
 
 * Requires PHP: 7.0
 * WP requires at least: 5.7
@@ -10,9 +10,9 @@
 
 ### About this project
 
-For this project, we'd like you to build a dashboard widget in WordPress that allows a shop manager or admin to enter an email address and get back a list of recent orders associated with that email.
+The project is to build a dashboard widget in WordPress that allows a shop manager or admin to enter an email address and get back a list of recent orders associated with that email.
 
-The goal for this project is to help us understand how you would approach WooCommerce plugin development and communicate as a developer.
+The goal of the project is to help us understand how you would approach WooCommerce plugin development and communicate as a developer.
 
 ### Getting started
 
@@ -31,10 +31,10 @@ wp core install --url={siteurl} --title={Title} --admin_user=admin --admin_passw
 
 #### 2. Install the plugin files
 
-Run this from the base directory of your WordPress install.
+Fork this plugin into a private repo (so other candidates can't see your work), and then install the fork in your WordPress directory.
 
 ```
-git clone https://github.com/UniversalYumsLLC/interview-project-fullstack wp-content/plugins/interview-project-fullstack
+git clone https://github.com/{username}/interview-project-fullstack wp-content/plugins/interview-project-fullstack
 ```
 
 #### 3. Installs the test dependencies
@@ -58,7 +58,7 @@ Example:
 vendor/bin/install-wp-tests.sh project_fullstack_tests root ''
 ```
 
-#### 5. Runs the tests
+#### 5. Run the tests
 
 You can run the version of phpunit that composer installs to run the:
 
@@ -68,9 +68,11 @@ vendor/phpunit/phpunit/phpunit -c phpunit.xml
 
 Once the test runs the terminal output how many tests passed/failed. If you have no output, it means the test didn't run properly. In that case, check your PHP logs.
 
+If you have trouble getting PHPUnit set up locally, automated tests also run on GitHub for any PR.
+
 ### Automated Tests ![Testing status](https://github.com/UniversalYumsLLC/interview-project-fullstack/actions/workflows/php-tests.yml/badge.svg?branch=main)
 
-Automated tests will be automatically run on your branch whenever a commit to GitHub is pushed.
+Automated tests will be automatically run on your branch whenever a commit to GitHub is pushed to main or in a PR.
 
 ### Project instructions
 

@@ -4,12 +4,12 @@ namespace InterviewProjectFullstack\Test\Unit;
 
 use WP_UnitTestCase;
 use WC_Helper_Order;
+use InterviewProjectFullstack;
 
 class Example_Test extends WP_UnitTestCase {
 
 	/**
-	 * This does not actually test any plugin code,
-	 * just included for demonstration purposes.
+	 * Example showing how to use a WC_Helper_Order helper method.
 	 */
 	public function test_example() {
 
@@ -19,5 +19,13 @@ class Example_Test extends WP_UnitTestCase {
 		$order->save();
 
 		$this->assertEquals( (int) $order->get_meta( 'example_timestamp' ), $timestamp );
+	}
+
+	/**
+	 * Example showing how to test a static method in the InterviewProjectFullstack class.
+	 */
+	public function test_example_method() {
+		$value = InterviewProjectFullstack::example_method();
+		$this->assertEquals( 5, $value );
 	}
 }

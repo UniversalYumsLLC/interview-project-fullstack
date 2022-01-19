@@ -76,6 +76,12 @@ Automated tests will be automatically run on your branch whenever a commit to Gi
 
 ### Project instructions
 
+**How to Submit the Project**
+
+If possible, please fork this project into a private repository so that other candidates cannot see your work. Add @devinsays to the repo when it's ready for review.
+
+If that is not possible, just zip up the code when it's complete and send it to our recruiter.
+
 **Functionality**
 
 - Add an input field for email address and a search button to the dashboard widget.
@@ -89,3 +95,8 @@ Automated tests will be automatically run on your branch whenever a commit to Gi
 - Search functionality should be accurate.
 - Include plenty of code comments and make clear commit messages.
 - Include at least two unit tests.
+
+**Other Questions**
+
+Q: Should this be optimized for a large WooCommerce site (i.e 500k+ orders)?
+A: No, you can assume this is a smaller site. But please add code comments if there's queries or areas in the code you believe would need to be optimized to work at scale.
